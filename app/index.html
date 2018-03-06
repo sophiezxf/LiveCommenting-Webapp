@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+<meta charset="utf-8">
+
+
+<style>
+.dm{width:100%;height:100%;border:1px solid #000}
+.dm .d_screen .d_mask{width:100%; height:380px; background:#000; opacity:0.5; filter:alpha(opacity=50); z-index:1;}
+.dm .d_screen .d_show div{font-size:22px;line-height:36px;font-weight:500;color:#fff;position:absolute;left:0;top:0;}
+</style>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="main-container">
+        <main id="main" style="margin-left:5px">
+        <div style="text-align:center;margin-top:10px">
+            <div class="dm" style="border:0">
+                <div class="d_screen" style="border: 1px solid rgb(229, 229, 229);">
+                    <div class="d_mask" style="background:#fff"></div>
+                        <div class="d_show">
+                            <!-- <div>text message</div>  -->
+                        </div>
+                    </div>
+                <div class="send">
+                    <div class="s_fiter">
+                        <div class="s_con">
+                            <p><input placeholder="plop something" class="s_txt" type="text" style="width:388px;
+                                height: 34px;
+                                border-radius: 3px;
+                                border: 1px solid rgb(204, 204, 204);
+                                padding-left: 10px;"/> </p><p>
+                                <input type="button" value="plop" class="s_sub" style="border: 1px solid rgb(230, 80, 30);color:rgb(230, 80, 30);
+                                border-radius: 3px;
+                                text-align: center;
+                                padding: 0;
+                                height: 35px;
+                                line-height: 35px;
+                                font-size: 14px;
+                                width:159px;
+                                background-color:white"/>
+                                <input type="button" value="clean" class="s_del" style="border: 1px solid rgb(176, 168, 165);color:rgb(176, 168, 165);
+                                border-radius: 3px;
+                                text-align: center;
+                                padding: 0;
+                                height: 35px;
+                                line-height: 35px;
+                                font-size: 14px;width:159px;background-color:white" /> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+       </div>
+    </div>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
+
+
+<script src="https://cdn.wilddog.com/js/client/current/wilddog.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCsboBL7l1UfoHBfdGknDpEZuUVEsdPnYU",
+        authDomain: "plop-284bd.firebaseapp.com",
+        databaseURL: "https://plop-284bd.firebaseio.com",
+        storageBucket: "plop-284bd.appspot.com",
+        messagingSenderId: "218752098187"
+      };
+    
+    firebase.initializeApp(config);
+</script>
+
+</script>
+
+
+
+</body>
+
+</html>

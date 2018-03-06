@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container
+    .col-lg-1.col-offset-6.centered
+      h1 Login Page
+      if (!user)
+        a(href="/login") Login
+        br
+        a(href="/register") Register
+      if (user)
+        p You are currently logged in as #{user.username}
+        a(href="/show") Go to show Screen
+        br
+        a(href="/send") Go to send Screen
+        br
+        button.btn.btn-default(href="/logout") Logout
